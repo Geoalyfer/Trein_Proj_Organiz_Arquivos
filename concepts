@@ -1,0 +1,25 @@
+Montar um esboço da arquitetura de pastas pelos tipos de extensão dos arquivos. Ex.; txt, mp4, pdf, etc
+
+Manter a pasta raiz na mesma para de origem.
+
+Criar um novo arquivo com o notebook com extensão ipynb
+
+Nomear os novos arquivos para gerar uma lista dentro do python [ , , ]
+os.listdir()
+['Doc',
+ 'Docx2',
+ 'New Microsoft PowerPoint Presentation.pptx',
+ 'New Microsoft Publisher Document.xlsx',
+ 'New Microsoft Word Document.docx',
+ 'New Text Document.txt',
+ 'Organizador.ipynb']
+
+Montar um list compheension dos arquivos a serem manipulados
+
+lista_arquivos = [arquivo for arquivo in os.listdir() if os.path.isfile(arquivo)]
+
+['New Microsoft PowerPoint Presentation.pptx',
+ 'New Microsoft Publisher Document.xlsx',
+ 'New Microsoft Word Document.docx',
+ 'New Text Document.txt',
+ 'Organizador.ipynb']
